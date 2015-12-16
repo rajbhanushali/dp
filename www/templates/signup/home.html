@@ -1,0 +1,33 @@
+<ion-view view-title="Sign-In" hide-nav-bar="true">
+  <div class="sign-in"></div>
+  <ion-content>
+    <div class="title">Dogplay</div>
+    <div class="padding">
+
+    <form>
+
+      <label class="item item-input">
+        <input type="text" placeholder="Email" style="color: white" ng-model="login.email">
+      </label>
+
+      <label class="item item-input eAuthSubmit">
+        <input type="text" placeholder="Password" style="color: white" ng-model="login.password">
+      </label>
+
+      <a class="button button-block button-royal rounded" ng-submit="emailAuth(login)">
+        Log In
+      </a>
+
+    </form>
+
+      <a class="button button-clear fgp" href="#/signin">
+        Forgot Password?
+      </a>
+
+      <a class="button button-block button-positive rounded" href="#/newUserPic">
+        Sign Up!
+      </a>      
+
+    </div>
+  </ion-content>
+</ion-view>

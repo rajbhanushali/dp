@@ -1,0 +1,29 @@
+<ion-view view-title="Sign In with Email">
+<ion-nav-title>
+  Sign In With Email
+</ion-nav-title>
+<div class="emailbg blur"></div>
+  <ion-content padding="true">
+
+    <input type="image" id="takeProfilePic" src="http://images.clipartpanda.com/dog-paw-clipart-LTKdnyGGc.png" class="imageicon" ng-click="takeProfilePic()"/>  
+
+    <div class="forms">
+
+      <label class="item item-input">
+        <input type="text" placeholder="Email" style="color: white" ng-model="login.email">
+      </label>
+
+      <label class="item item-input">
+        <input type="text" placeholder="Password" style="color: white" ng-model="login.password">
+      </label>
+
+    </div>
+
+    <div class="centered">
+
+    <a class="button icon ion-chevron-right button-positive circle" ng-click="emailNextStep(user)"></a>
+
+    </div>
+
+  </ion-content>
+</ion-view>

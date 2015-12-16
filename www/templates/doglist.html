@@ -1,0 +1,14 @@
+      <ion-view view-title="About">
+        <ion-content padding="true">
+          <ion-list>
+                   <a ng-repeat="item in items" 
+           class="item item-thumbnail-left">
+
+          <img ng-src="{{ item.image }}">
+          <h2>{{ item.name }}</h2>
+          <h4>{{ item.age }}</h4>
+        </a>
+            
+          </ion-list>
+        </ion-content>
+      </ion-view>
