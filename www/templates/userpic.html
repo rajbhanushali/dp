@@ -1,0 +1,26 @@
+<ion-view view-title="Profile Picture" hide-nav-bar="true" class="login-bg">
+	<ion-content>
+
+	<div><!-- ng-show = "noPicYet" --> 
+		  <input type="image" id="takeProfilePic" src="http://images.clipartpanda.com/dog-paw-clipart-LTKdnyGGc.png" class="imageicon" ng-click="getUserProfilePic()"/>
+		  <p class="centered userPhotoDesc">
+		  Let's get a mugshot of that pretty face! 
+		  <br>
+		  Click on the paw.
+		  </p>
+	</div>
+
+		<!-- <div class="centered" ng-hide="noPicYet">
+		 	<img class="img-circle profilePic" ng-src="{{profilePic}}">
+		 	<p class="centered">Awesome!</p>
+		 </div>
+		-->
+
+		<div class="padding center">
+		  <button class="button button-positive round" ui-sref="petinfo"> <!--ng-click = "afterUserPic()" ng-hide="noPicYet"-->
+		    <i class="ion-arrow-right-c"></i>
+		  </button>
+		</div>
+      
+	</ion-content>
+</ion-view>

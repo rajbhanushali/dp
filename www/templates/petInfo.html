@@ -1,0 +1,60 @@
+<ion-view view-title="About Your Furry Friend" hide-nav-bar="true" class="login-bg">
+	<ion-content>
+	    <div class="list list-inset transparent-form">
+	      <label class="item item-input">
+	        <i class="ion-ios-person-outline light icon-label"></i>
+	        <input type="text" placeholder="What's his/her name?">
+	      </label>
+	      <br>
+	      <label class="item item-input">
+	        <i class="ion-ios-paw light icon-label"></i>
+	        <input type="text" placeholder="What breed is your dog?">
+	      </label>
+	      <br>
+	    <label class="item item-input white">On a scale of 1-10, how energetic is your dog?</label>
+		<div class="clear item range range-balanced">
+		    <i class="icon ion-ios-bolt-outline"></i>
+		    <input type="range" name="energy" min="0" max="10" value="5" ng-model="pet.energy">
+		    <i class="icon ion-ios-bolt"></i>
+		    <!--<span class="range-value">{{!pet.energy ? 5 : pet.energy}}</span>-->
+		</div>
+		<br>
+		<label class="item item-input white">How big is your dog?</label>
+
+		<div class="clear item">
+		<div style="display: inline-block;text-align:center">
+
+			<input type="image" id="dogSM" src="https://s-media-cache-ak0.pinimg.com/originals/6d/3c/69/6d3c696a5e84c2eb7443370eaeacfeaa.jpg" class="dogImageSmall" onclick="this.classList.add('inverted');document.getElementById('dogMD').className = 'dogImageMedium';document.getElementById('dogLG').className = 'dogImageLarge';" />
+			<p class="white">Small<br>(0-20 lbs)</p>
+
+		</div>
+		<div style="display: inline-block;text-align:center">
+
+			<input type="image" id="dogMD" src="https://s-media-cache-ak0.pinimg.com/originals/6d/3c/69/6d3c696a5e84c2eb7443370eaeacfeaa.jpg" class="dogImageMedium" onclick="this.classList.add('inverted');document.getElementById('dogSM').className = 'dogImageSmall';document.getElementById('dogLG').className = 'dogImageLarge';"/>
+			<p class="white">Medium<br>(20 - 50 lbs)</p>
+
+		</div>
+		<div style="display: inline-block;text-align:center">
+
+			<input type="image" id="dogLG" src="https://s-media-cache-ak0.pinimg.com/originals/6d/3c/69/6d3c696a5e84c2eb7443370eaeacfeaa.jpg" class="dogImageLarge" onclick="this.classList.add('inverted');document.getElementById('dogSM').className = 'dogImageSmall';document.getElementById('dogMD').className = 'dogImageMedium';"/>
+			<p class="white">Large<br>(50+ lbs)</p>
+		</div>
+		</div>
+		<br>
+		<div class="button-bar">
+			<button class="button" id="dogisboy" onclick="this.classList.add('button-positive');document.getElementById('dogisgirl').className='button'">Boy</button>
+			<button class="button" id="dogisgirl" onclick="this.classList.add('button-royal');document.getElementById('dogisboy').className='button'" >Girl</button>
+		</div>
+
+		<br>
+
+	    <div class="padding center">
+	      <button class="button button-positive round" ui-sref="petpic">
+	        <i class="ion-arrow-right-c"></i>
+	      </button>
+	    </div>
+
+	    </div>
+
+	</ion-content>
+</ion-view>

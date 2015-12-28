@@ -1,0 +1,55 @@
+<ion-view view-title="Login" hide-nav-bar="true" class="login-bg">
+  <ion-content>
+    <!-- Logo -->
+    <div class="padding text-center">
+      <h1>
+        <i class="light ion-ios-paw"></i>
+      </h1>
+      <h2 class="light">Dogplay</h2>
+      <p class="light">Connect with fellow dog owners</p>
+    </div>
+
+    <!-- Login form -->
+    <div class="list list-inset transparent-form">
+      <label class="item item-input">
+        <i class="ion-ios-email-outline light icon-label"></i>
+        <input type="email" placeholder="Email">
+      </label>
+      <label class="item item-input">
+        <i class="ion-ios-locked-outline light icon-label"></i>
+        <input type="password" placeholder="Password">
+      </label>
+    </div>
+    <div class="padding">
+      <button class="button button-block button-positive" ui-sref="home">
+        Login
+      </button>
+    </div>
+
+    <!-- Social login -->
+    <div class="padding text-center">
+      <span class="light">Or login with:</span>
+      <p>
+        <a href="#" class="circle-button facebook-color">
+          <i class="ion-social-facebook"></i>
+        </a>
+        <a href="#" class="circle-button twitter-color">
+          <i class="ion-social-twitter"></i>
+        </a>
+        <a href="#" class="circle-button googleplus-color">
+          <i class="ion-social-googleplus"></i>
+        </a>
+      </p>
+    </div>
+
+    <!-- Other links -->
+    <div class="padding row">
+      <div class="col">
+        <span class="light">Forgot password?</span>
+      </div>
+      <div class="col">
+        <a ui-sref="register" class="light">New here? Sign up</a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,61 @@
+/* Empty. Add your own CSS if you like */
+.imageicon{
+	height: 20vh;
+	display: block;
+	margin: auto;
+	margin-top: 10vh;
+}
+
+.userPhotoDesc{
+	margin-top: 3vh;
+	color: white;
+	text-align: center;
+}
+
+.clear{
+	background-color: transparent;
+	border-top: 0px;
+
+}
+
+.range-value {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #353535;
+  padding: 5px 10px;
+  margin-left: 7px;
+}
+
+.white{
+	color: white;
+}
+
+.noborder{
+	border: 0px;
+}
+
+.dogImageSmall{
+	height: 8vh;
+	/*display: inline-block;*/
+}
+.dogImageMedium{
+	height: 12vh;
+}
+.dogImageLarge{
+	height: 15vh;
+}
+
+.white{
+	color:white !important;
+}
+
+.inverted{
+	filter: invert(100%);
+	-webkit-filter: invert(100%);
+}
